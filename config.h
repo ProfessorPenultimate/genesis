@@ -42,7 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #define MATRIX_ROW_PINS { A0, A1, A2, A3, A4, A5, A6, A7, A8, B0 }
 #define MATRIX_COL_PINS { B1, B2, B3, B4, B5, B10, B11, B12, B13, B14, B15 }
-#define UNUSED_PINS
+//#define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
@@ -168,12 +168,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MAGIC_KEY_LAYER7         7
 //#define MAGIC_KEY_LAYER8         8
 //#define MAGIC_KEY_LAYER9         9
-#define MAGIC_KEY_BOOTLOADER       B
-#define MAGIC_KEY_BOOTLOADER_ALT   ESC
+//#define MAGIC_KEY_BOOTLOADER     B
+//#define MAGIC_KEY_BOOTLOADER_ALT ESC
 //#define MAGIC_KEY_LOCK           CAPS
 //#define MAGIC_KEY_EEPROM         E
 //#define MAGIC_KEY_EEPROM_CLEAR   BSPACE
-#define MAGIC_KEY_NKRO             N
+//#define MAGIC_KEY_NKRO           N
 //#define MAGIC_KEY_SLEEP_LED      Z
 
 /*
