@@ -26,18 +26,31 @@
  *
  * The second converts the arguments into a two-dimensional array which
  * represents the switch matrix.
+ --Format K(row, column)--
  */
 #define LAYOUT( \
-    K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K0A, K0B, K0C, K0D, K0E, K0F, \
-    K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K1A, K1B, K1C,      K1E, K1F, \
-    K20,      K22, K23, K24, K25, K26, K27, K28, K29, K2A, K2B, K2C, K2D,      K2F, \
-    K30,           K33, K34, K35, K36, K37, K38, K39, K3A, K3B, K3C, K3D, K3E, K3F, \
-    K40, K41,      K43,                K47,                K4B, K4C, K4D, K4E, K4F  \
+K97, K07, K68, K88,  K98, K4A  K96, K06, K95, K05, K94, K04, K93, K03, K92, K02, K91, K01, K90, K00 \
+K87, K17, K58, K78,  K3A, K86, K16, K85, K15, K84, K14, K83, K13, K82, K12, K81, K11,   K80,    K10 \
+K77, K27, K48,         K2A,  K76, K26, K75, K25, K74, K24, K73, K23, K72, K22, K71, K21,  K70,  K20 \
+K67, K37, K38, K1A,     K66,  K36, K65, K35, K64, K34, K63, K33, K62, K32, K61, K31      K60,   K30 \
+K57, K47, K28,         K56,  K46, K55, K45, K54, K44, K53, K43, K52, K42, K51,     K41,    K50, K40 \
+   K08,   K18, K0A,  K09,   K19,   K29,           K39,                 K49, K59, K69, K79, K89, K99 \
 ) \
+/*
+Logical Matrix of 10 rows and 11 columns,this matrix starts at the top right to make
+wiring easier
+*/
 { \
-    { K00, K01,   K02,   K03, K04,   K05,   K06,   K07, K08,   K09,   K0A,   K0B, K0C, K0D,   K0E,   K0F }, \
-    { K10, K11,   K12,   K13, K14,   K15,   K16,   K17, K18,   K19,   K1A,   K1B, K1C, KC_NO, K1E,   K1F }, \
-    { K20, KC_NO, K22,   K23, K24,   K25,   K26,   K27, K28,   K29,   K2A,   K2B, K2C, K2D,   KC_NO, K2F }, \
-    { K30, KC_NO, KC_NO, K33, K34,   K35,   K36,   K37, K38,   K39,   K3A,   K3B, K3C, K3D,   K3E,   K3F }, \
-    { K40, K41,   KC_NO, K43, KC_NO, KC_NO, KC_NO, K47, KC_NO, KC_NO, KC_NO, K4B, K4C, K4D,   K4E,   K4F }  \
+    {K0A, K09, K08, K07, K06, K05, K04, K03, K02, K01, K00 }, \
+    {K1A, K19, K18, K17, K16, K15, K14, K13, K12, K11, K10 }, \
+    {K2A, K29, K28, K27, K26, K25, K24, K23, K22, K21, K20 }, \
+    {K3A, K39, K38, K37, K36, K35, K34, K33, K32, K31, K30 }, \
+    {K4A, K49, K48, K47, K46, K45, K44, K43, K42, K41, K40 }, \
+    {K5A, K59, K58, K57, K56, K55, K54, K53, K52, K51, K50 }, \
+    {K6A, K69, K68, K67, K66, K65, K64, K63, K62, K61, K60 }, \
+    {K7A, K79, K78, K77, K76, K75, K74, K73, K72, K71, K70 }, \
+    {K8A, K89, K88, K87, K86, K85, K84, K83, K82, K81, K80 }, \
+    {K9A, K99, K98, K97, K96, K95, K94, K93, K92, K91, K90 }, \
+
+
 }
