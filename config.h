@@ -59,7 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CAPS_LOCK_LED_PIN A14
 
 #define RGB_DI_PIN A13
-#ifdef RGB_DI_PIN
+//#ifdef RGB_DI_PIN
 #define RGBLED_NUM 16
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8

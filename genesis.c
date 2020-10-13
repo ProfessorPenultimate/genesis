@@ -21,7 +21,7 @@
 void eeconfig_init_kb(void) {
 #ifdef RGBLIGHT_ENABLE
     rgblight_enable(); // Enable RGB by default
-    rgblight_setrgb(RBG_GREEN);  // Set default RGB - green hue, full saturation, full brightness
+    rgblight_setrgb(RGB_GREEN);  // Set default RGB - green hue, full saturation, full brightness
 #ifdef RGBLIGHT_ANIMATIONS
     rgblight_mode(RGBLIGHT_MODE_STATIC_LIGHT); // set to RGB_RAINBOW_STATIC_LIGHT by default
 #endif
