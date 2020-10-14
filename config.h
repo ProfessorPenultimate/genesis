@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER 0x0001
 #define MANUFACTURER Penultimate
 #define PRODUCT Genesis
-#define DESCRIPTION A compact southpaw 96 key
+#define DESCRIPTION A compact southpaw full-size
 
 /* key matrix size */
 #define MATRIX_ROWS 10
@@ -40,8 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { A0, A1, A2, A3, A4, A5, A6, A7, A8, B0 }
-#define MATRIX_COL_PINS { B1, B2, B3, B4, B5, B10, B11, B12, B13, B14, B15 }
+#define MATRIX_ROW_PINS { A13, A14, B12, B11, B10, B9, B15, B14, B13, B8 }
+#define MATRIX_COL_PINS { A15, A8, A7, A6, A5, A4, B0, B1, B2, B3, B4 }
 //#define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -49,16 +49,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
- */
+ 1*1111111/
 //#define SOFT_SERIAL_PIN E6  // or D1, D2, D3, E6
 
 // #define BACKLIGHT_PIN A13
 // #define BACKLIGHT_BREATHING
 // #define BACKLIGHT_LEVELS 3
 
-#define CAPS_LOCK_LED_PIN A14
+#define CAPS_LOCK_LED_PIN A2
 
-#define RGB_DI_PIN A13
+#define RGB_DI_PIN A1
 //#ifdef RGB_DI_PIN
 #define RGBLED_NUM 16
 #define RGBLIGHT_HUE_STEP 8
