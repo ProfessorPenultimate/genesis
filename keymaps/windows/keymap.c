@@ -1,5 +1,4 @@
-
-/* Copyright 2020 Matt3o
+/* Copyright 2020 ProfessorPenulimate
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
